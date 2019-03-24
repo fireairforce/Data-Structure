@@ -61,7 +61,7 @@ function LinkedList(){
               while( index<position ){ 
                   previous = current;
                   current = current.next;
-                  index ++ ;
+                  index ++;
               }
               // 将previous 和 current 的下一项链接起来;跳过current,从而移除
               previous.next = current.next;
@@ -113,3 +113,8 @@ list.append(15);
 list.append(10);
 
 console.log(list.toString());
+list.removeAt(1);
+list.insert(1,5);
+console.log(list.toString());
+console.log(list.indexOf(15));
+console.log(list.isEmpty());
